@@ -143,6 +143,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <color key="backgroundColor" red="0.3803921938" green="0.51372551919999998" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </variation>
                                         <connections>
                                             <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zV0-wr-wgh"/>
                                         </connections>
@@ -197,11 +200,14 @@
                     <connections>
                         <outlet property="emailBarView" destination="oxe-ML-OZz" id="QL7-6d-IQF"/>
                         <outlet property="emailTextField" destination="ubn-ya-4ln" id="7V7-R3-X5a"/>
+                        <outlet property="envelopeImage" destination="Mqo-d2-aGX" id="k7l-b2-6BT"/>
+                        <outlet property="lockImage" destination="ayV-iM-A2h" id="rA7-kw-3Ys"/>
                         <outlet property="loginButton" destination="Nd9-dp-pEk" id="a04-Uh-rIy"/>
                         <outlet property="newUserLabel" destination="bcM-CM-KJx" id="Tt0-3l-1oR"/>
                         <outlet property="passwordBarView" destination="Ncc-yh-9GT" id="CsQ-OO-Q9B"/>
                         <outlet property="passwordTextField" destination="y1v-g3-gOl" id="Mkl-mO-NuB"/>
                         <outlet property="signUpButton" destination="A84-IY-kKD" id="F7v-Wg-d5b"/>
+                        <segue destination="6NV-QN-VMD" kind="show" identifier="goToHomePage" id="EdF-jc-Lqb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -218,6 +224,7 @@
                         <viewLayoutGuide key="safeArea" id="4uN-ph-IN2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OeV-uc-WWE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4h-Sv-3UW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
